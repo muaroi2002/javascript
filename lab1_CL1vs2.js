@@ -1,35 +1,36 @@
-//Challenge 1
-//Data 1:-
-let heightMark = 1.69;
-let weightMark = 78;
-let BMIMark = weightMark / (heightMark ** 2);
+let marksMass1 = 78
+let marksHeight1 = 1.69
+let joihnsMass1 = 92
+let joihnsHeight1 = 1.95
+let marksBMI1 = marksMass1 / marksHeight1 ** 2
+let johnsBMI1 = joihnsMass1 / joihnsHeight1 ** 2
+let markHigherBMI1 = marksBMI1 > johnsBMI1
+let marksMass2 = 95
+let marksHeight2 = 1.88
 
-let heightJohn = 1.95;
-let weightJohn = 92;
-let BMIJohn = weightJohn / (heightJohn ** 2);
-
-markHigherBMI = BMIMark > BMIJohn;
-console.log(markHigherBMI);
-
-//Data 2:-
-heightMark = 1.88;
-weightMark = 95;
-BMIMark = weightMark / (heightMark ** 2);
-
-heightJohn = 1.76;
-weightJohn = 85;
-BMIJohn = weightJohn / (heightJohn ** 2);
-
-markHigherBMI = BMIMark > BMIJohn;
-console.log(markHigherBMI);
-
-console.log(BMIJohn);
-
-// Challenge 2
-if (BMIMark > BMIJohn) {
-    console.log("Mark's BMI is higher than John's!");
-} else {
-    console.log("John's BMI is higher than Mark's!");
+let joihnsMass2 = 85
+let joihnsHeight2 = 1.76
+let marksBMI2 = marksMass2 / marksHeight2 ** 2
+let johnsBMI2 = joihnsMass2 / joihnsHeight2 ** 2
+let markHigherBMI2 = marksBMI2 > johnsBMI2
+console.log("Task1 : ");
+let functionChallenge2Task1 = (markHigherBMI) => {
+    if (markHigherBMI) {
+        console.log("Mark's BMI is higher than John's!");
+    } else {
+        console.log("John's BMI is higher than Mark's!");
+    }
 }
+functionChallenge2Task1(markHigherBMI1)
+functionChallenge2Task1(markHigherBMI2)
+console.log("Task 2 : ");
+let functionChallenge2Task2 = (marksBMI, johnsBMI, markHigherBMI) => {
+    if (markHigherBMI) {
+        console.log(`Mark's BMI (${marksBMI.toFixed(1)}) is higher than John's (${johnsBMI.toFixed(1)})!`);
+    } else {
+        console.log(`John's BMI (${johnsBMI.toFixed(1)}) is higher than Mark's (${marksBMI.toFixed(1)})!`);
+    }
+}
+functionChallenge2Task2(marksBMI1, johnsBMI1, markHigherBMI1)
+functionChallenge2Task2(marksBMI2, johnsBMI2, markHigherBMI2)
 
-//Challenge 3
